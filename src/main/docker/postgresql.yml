@@ -1,0 +1,11 @@
+version: '2'
+services:
+  yikondiapp-postgresql:
+    image: postgres:11.5
+    # volumes:
+    #     - ~/volumes/jhipster/yikondiApp/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=yikondiApp
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
